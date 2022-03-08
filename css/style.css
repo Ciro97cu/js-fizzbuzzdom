@@ -3,46 +3,56 @@ html, body {
     width: 100%;
 }
 
+/* body css rules for centering the title + container */
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: #100d3c;
     row-gap: 20px;
 }
 
+/* h1, title */
 h1 {
-    color: white;
-    font-size: 50px;
+    color: lightblue;
+    font-size: 70px;
     text-align: center;
+    text-shadow: 0 0 10px lightblue;
 }
 
+/* css rules container */
 .container {
     display: grid;
-    grid-template-columns: repeat(10, 70px);
-    grid-template-rows: repeat(10, 70px);
-    gap: 20px;
-    background-color: blueviolet;
+    grid-template-columns: repeat(10, 100px);
+    grid-template-rows: repeat(10, 100px);
+    gap: 10px;
+    background-color: lightblue;
     padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px lightblue;
 }
 
+/* general css rules box inside container */
 .box {
-    background-color: red;
+    background-color: rgb(158, 76, 230);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 500;
+    font-weight: bolder;
+    border-radius: 10px;
+    text-transform: uppercase;
 }
 
+/* color fizz, buzz and fizzbuzz */
 .fizz {
-    background-color: yellow;
+    background-color: #edda05;
 }
 
 .buzz {
-    background-color: green;
+    background-color: #dc0404;
 }
 
 .fizz-buzz {
-    background-color: blue;
+    background-color: #ff00cc;
 }
