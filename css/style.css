@@ -1,8 +1,3 @@
-html, body {
-    height: 100%;
-    width: 100%;
-}
-
 /* body css rules for centering the title + container */
 body {
     display: flex;
@@ -23,9 +18,10 @@ h1 {
 
 /* css rules container */
 .container {
-    display: grid;
-    grid-template-columns: repeat(10, 100px);
-    grid-template-rows: repeat(10, 100px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
     gap: 10px;
     background-color: lightblue;
     padding: 20px;
@@ -36,12 +32,15 @@ h1 {
 /* general css rules box inside container */
 .box {
     background-color: rgb(158, 76, 230);
+    flex-basis: 100px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bolder;
     border-radius: 10px;
     text-transform: uppercase;
+    box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 /* color fizz, buzz and fizzbuzz */
@@ -55,4 +54,10 @@ h1 {
 
 .fizz-buzz {
     background-color: #ff00cc;
+}
+
+@media screen and (max-width: 350px) {
+    h1 {
+        font-size: 40px;
+    }
 }
